@@ -15,46 +15,29 @@
 
     <div class="container">
       <div class="main text-center">
+
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Start typing...">
+          <input type="text" class="form-control" ng-model="name" placeholder="Start typing...">
         </div>
 
         <div ng-controller="UserController">
-          {{ teste }}
+          <div class="card" ng-repeat="user in users | filter:name">
+            <figure>
+              <img ng-src="{{ user.picture }}">
+            </figure>
+            <h3>{{ user.name }}</h3>
+            <p>{{ user.ocupation }}</p>
+            <p>{{ user.email }}</p>
+          </div>
         </div>
 
-        <div class="card">
-          <figure>
-            <img src="http://placehold.it/90x90">
-          </figure>
-          <h3>William Oliveira</h3>
-          <p>Desenvolvedor Web Freelancer</p>
-          <p>sudowilliam@gmail.com</p>
-        </div>
-
-        <div class="card">
-          <figure>
-            <img src="http://placehold.it/90x90">
-          </figure>
-          <h3>Darth Vader</h3>
-          <p>Sith Lord</p>
-          <p>vader@gmail.com</p>
-        </div>
-
-        <div class="card">
-          <figure>
-            <img src="http://placehold.it/90x90">
-          </figure>
-          <h3>Luke Skywalker</h3>
-          <p>Jedi Knight</p>
-          <p>luke@gmail.com</p>
-        </div>
       </div>
     </div>
 
     <script type="text/javascript" src="assets/bower/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="assets/bower/angular/angular.js"></script>
     <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/services/userServices.js"></script>
     <script type="text/javascript" src="app/controllers/userController.js"></script>
   </body>
 </html>
