@@ -1,3 +1,3 @@
-App.controller('UserController', function ($scope) {
-  $scope.teste = "teste";
+App.controller('UserController', function ($scope, User) {
+
 });
