@@ -1,5 +1,11 @@
+html {
+  box-shadow: inset 0px 9px 15px -10px #000;
+}
+
 body {
   background-color: #F8F8F8;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -10,7 +16,11 @@ header {
 header h1 {
   margin: 15px 0;
   font-family: 'Averia Sans Libre', cursive;
-  color: #B9B9B9;
+  color: #FF7171;
+}
+
+.main input[type="text"] {
+  border-radius: 20px;
 }
 
 .card {
@@ -31,4 +41,9 @@ header h1 {
 .card p {
   margin: 5px 0;
   color: #696969;
+}
+
+.card img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
 }
