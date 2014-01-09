@@ -1,5 +1,5 @@
 html {
-  box-shadow: inset 0px 9px 15px -10px #000;
+  box-shadow: inset 0px 9px 15px -10px rgba(0, 0, 0, 0.46);
 }
 
 body {
