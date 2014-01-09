@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="App">
   <head>
     <title>AngularJS Mobile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -17,6 +17,10 @@
       <div class="main text-center">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Start typing...">
+        </div>
+
+        <div ng-controller="UserController">
+          {{ teste }}
         </div>
 
         <div class="card">
