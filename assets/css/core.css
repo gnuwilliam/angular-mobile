@@ -43,7 +43,19 @@ header h1 {
   color: #696969;
 }
 
-.card img {
+.card figure {
   border-radius: 50%;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.card img {
+  width: 100%;
+  height: auto; 
 }
