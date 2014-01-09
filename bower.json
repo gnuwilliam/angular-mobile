@@ -1,0 +1,17 @@
+{
+  "name": "angular-mobile",
+  "version": "0.0.1",
+  "authors": [
+    "William Oliveira <sudowilliam@gmail.com>"
+  ],
+  "description": "Simple mobile application built with AngularJS",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower/",
+    "test",
+    "tests"
+  ]
+}
